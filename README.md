@@ -1,8 +1,8 @@
-# Preetham's Developer Portfolio
+#  Portfolio- Preetham Jostan D Souza
 
 A fast, fully responsive, and highly interactive developer portfolio built to showcase projects, skills, and experience in Data Analytics, Machine Learning, and Agentic AI Systems.
 
-## 🚀 Features
+##  Features
 
 - **Dynamic Hero Section:** Engaging layout with a custom cartoon avatar and personalized styling.
 - **Project Showcase:** Interactive tilt-cards displaying real-world projects and case studies.
@@ -11,14 +11,14 @@ A fast, fully responsive, and highly interactive developer portfolio built to sh
 - **Dark/Light Mode:** Seamless theme toggling with custom CSS variables.
 - **Fully Responsive:** Optimized for both mobile and desktop viewing.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework:** React + Vite
 - **Routing:** TanStack Router
 - **Styling:** Custom CSS with Tailwind CSS integrations
 - **Deployment:** Vercel (Recommended)
 
-## 💻 Getting Started
+##  Getting Started
 
 To run this project locally:
 
@@ -40,14 +40,14 @@ To run this project locally:
    ```
    The application will be available at `http://localhost:8080/`.
 
-## 🌐 Deployment
+##  Deployment
 
 This project is optimized for deployment on Vercel:
 1. Connect your GitHub repository to Vercel.
 2. Vercel will automatically detect the Vite preset.
 3. Click "Deploy". No extra configuration is needed!
 
-## 📬 Contact
+##  Contact
 
 Have a role, project, or idea in mind? Reach out!
 - Email: preethamjdza@gmail.com
