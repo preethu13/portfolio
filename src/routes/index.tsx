@@ -332,7 +332,7 @@ function Contact() {
       <div className="mb-8">
         <p className="mb-2 font-mono text-sm font-semibold uppercase tracking-widest text-[var(--primary)]">// say hi</p>
         <h2 className="font-display text-5xl md:text-6xl">
-          <Typewriter before="Let's build something " highlight="crazy..." speed={80} />
+          <Typewriter before="Let's build something " highlight="crazy!" speed={80} />
         </h2>
       </div>
       <div className="rounded-3xl ink-border bg-[var(--card)] p-8 shadow-comic-lg md:p-12">
