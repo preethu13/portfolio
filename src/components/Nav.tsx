@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useTheme } from "./ThemeProvider";
 
 const links = [
@@ -9,8 +10,32 @@ const links = [
 
 export function Nav() {
   const { theme, toggle } = useTheme();
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className="fixed left-1/2 top-4 z-50 w-[min(95%,900px)] -translate-x-1/2">
+    <header 
+      className={`fixed left-1/2 top-4 z-50 w-[min(95%,900px)] -translate-x-1/2 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-[150%]"
+      }`}
+    >
       <nav className="flex items-center justify-between gap-4 rounded-full ink-border bg-[var(--card)] px-5 py-2.5 shadow-comic">
         <a href="#top" data-cursor="home" className="font-display text-xl">
           PJD
